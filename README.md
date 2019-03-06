@@ -1,2 +1,2 @@
-#My solutions to Codewars kata
+# My solutions to Codewars kata
 Python and Go so far.
