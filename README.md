@@ -1,2 +1,3 @@
-# My solutions to Codewars kata
-Python and Go so far.
+# My solutions to Codewars kata 
+
+I go polyglot.
