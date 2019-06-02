@@ -3,14 +3,24 @@ package kata
 import "strings"
 
 func FindShort(s string) int {
-	words := strings.Split(s, " ")
-	short := len(words[0])
 
-	for _, word := range words {
-		if len(word) < short {
-			short = len(word)
+	words := strings.Fields(s)
+
+	var l int
+	list := make([]int, 0)
+
+	for _, w := range words {
+		l = len(w)
+		list = append(list, l)
+	}
+
+	min := list[0]
+
+	for _, n := range list {
+		if n < min {
+			min = n
 		}
 	}
 
-	return short
+	return min
 }
